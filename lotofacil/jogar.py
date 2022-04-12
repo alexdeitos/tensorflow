@@ -123,9 +123,6 @@ print(f'Resultado: (Previsão Modelo) = {predicao_alvo[0][0]}')
 
 print(f'\nProbabilidade das dezenas sairem: {probabilidade}%')
 
-# Números sorteados (em ordem de sorteio e em ordem crescente)
-print(f'\nNúmeros sorteados:  {[numeros[0] for numeros in sorteados]}')
-
 for k, v in enumerate(jogos):
     cfibo, cimpar, cprimo = validaGame(v)
     print(f'\nNúmeros ordenados do jogo {k}:  {v}')
