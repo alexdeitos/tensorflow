@@ -14,8 +14,11 @@ def carregar_dados(guia='Importar_Ciclo'):
     caminho = './base/base_dados.xlsx'
     planilha = ExcelFile(caminho)
     dados = read_excel(planilha, guia)
-
+#    print(dados)
     return dados
+
+
+carregar_dados()
 
 
 def preparar_dados(base_dados):

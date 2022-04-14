@@ -7,12 +7,12 @@ DEZENAS = [d for d in range(1, 26)]
 def sortear_numeros(n_pesos: list, n_numero_peso: dict, dz=DEZENAS, n_dz=15):
     """
     Sorteia as dezenas do jogo.
- 
+
     :param n_pesos: lista de peso das dezenas.
     :param n_numero_peso: dicionário com as dezenas e seus respectivos pesos.
     :param dz: Lista com a relação de dezenas default:{DEZENAS}.
     :param n_dz: Quantidade de dezenas a serem sorteadas default:{15}.
-    
+
     :return: as dezenas sorteadas.
     """
 

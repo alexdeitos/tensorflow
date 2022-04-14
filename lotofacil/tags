@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/deitos/projetos/TensorFlow/lotofacil/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+Acumulação	README.md	/^### Acumulação  $/;"	S	section:PRINCIPAIS INFORMAÇÕES DO JOGO""Como jogar
+Apostas	README.md	/^### Apostas  $/;"	S	section:PRINCIPAIS INFORMAÇÕES DO JOGO""Como jogar
+Baixar os pacotes e dependências	README.md	/^### Baixar os pacotes e dependências$/;"	S	section:COMO UTILIZAR""Projeto
+COMO UTILIZAR	README.md	/^# COMO UTILIZAR$/;"	c
+Como jogar	README.md	/^## Como jogar  $/;"	s	chapter:PRINCIPAIS INFORMAÇÕES DO JOGO
+Contribuição	README.md	/^## Contribuição$/;"	s	chapter:COMO UTILIZAR
+Criar resultados e combinações	README.md	/^### Criar resultados e combinações$/;"	S	section:COMO UTILIZAR""Projeto
+Criação do ambiente virtual	README.md	/^## Criação do ambiente virtual  $/;"	s	chapter:COMO UTILIZAR
+Dúvidas, bugs e sugestões	README.md	/^### Dúvidas, bugs e sugestões$/;"	S	section:COMO UTILIZAR""Projeto
+Estrutura do ambiente	README.md	/^### Estrutura do ambiente  $/;"	S	section:COMO UTILIZAR""Projeto
+FUNCIONALIDADES	README.md	/^### FUNCIONALIDADES  $/;"	S	section:LOTOFÁCIL""INFORMAÇÕES
+INFORMAÇÕES	README.md	/^## INFORMAÇÕES  $/;"	s	chapter:LOTOFÁCIL
+Inicializar o ambiente	README.md	/^### Inicializar o ambiente$/;"	S	section:COMO UTILIZAR""Projeto
+Inserir o projeto no ambiente	README.md	/^### Inserir o projeto no ambiente  $/;"	S	section:COMO UTILIZAR""Projeto
+Instalação do interpretador Python	README.md	/^## Instalação do interpretador Python  $/;"	s	chapter:COMO UTILIZAR
+LOTOFÁCIL	README.md	/^# LOTOFÁCIL  $/;"	c
+PRINCIPAIS INFORMAÇÕES DO JOGO	README.md	/^# PRINCIPAIS INFORMAÇÕES DO JOGO  $/;"	c
+PRINCIPAIS PACOTES UTILIZADOS	README.md	/^### PRINCIPAIS PACOTES UTILIZADOS  $/;"	S	section:LOTOFÁCIL""INFORMAÇÕES
+Premiação	README.md	/^### Premiação  $/;"	S	section:PRINCIPAIS INFORMAÇÕES DO JOGO""Como jogar
+Projeto	README.md	/^## Projeto  $/;"	s	chapter:COMO UTILIZAR
+Recebimento de prêmios	README.md	/^### Recebimento de prêmios  $/;"	S	section:PRINCIPAIS INFORMAÇÕES DO JOGO""Como jogar
+Rodar o projeto	README.md	/^### Rodar o projeto$/;"	S	section:COMO UTILIZAR""Projeto
+Sorteios	README.md	/^### Sorteios  $/;"	S	section:PRINCIPAIS INFORMAÇÕES DO JOGO""Como jogar
+Tabela de preços	README.md	/^### Tabela de preços  $/;"	S	section:PRINCIPAIS INFORMAÇÕES DO JOGO""Como jogar
+cfibo	jogar.py	/^        cfibo, cimpar, cprimo = validaGame(jogo)$/;"	v
+cfibo	jogar.py	/^    cfibo, cimpar, cprimo = validaGame(v)$/;"	v
+cimpar	jogar.py	/^        cfibo, cimpar, cprimo = validaGame(jogo)$/;"	v
+cimpar	jogar.py	/^    cfibo, cimpar, cprimo = validaGame(v)$/;"	v
+cprimo	jogar.py	/^        cfibo, cimpar, cprimo = validaGame(jogo)$/;"	v
+cprimo	jogar.py	/^    cfibo, cimpar, cprimo = validaGame(v)$/;"	v
+dados	jogar.py	/^dados = carregar_dados()$/;"	v
+jogo	jogar.py	/^    jogo = sorted([numeros[0] for numeros in sorteados])$/;"	v
+jogo_aceito	jogar.py	/^                jogo_aceito = False$/;"	v
+jogo_aceito	jogar.py	/^            jogo_aceito = [True if jogo in possibilidades_atualizada else False]$/;"	v
+jogo_aceito	jogar.py	/^jogo_aceito = False$/;"	v
+jogos	jogar.py	/^jogos = []$/;"	v
+modelo	jogar.py	/^modelo, pontuacao = criar_modelo(dados)$/;"	v
+numero_pesos	jogar.py	/^peso, numero_pesos = calcular_numero_pesos(dados)$/;"	v
+peso	jogar.py	/^peso, numero_pesos = calcular_numero_pesos(dados)$/;"	v
+pontuacao	jogar.py	/^modelo, pontuacao = criar_modelo(dados)$/;"	v
+possibilidades	jogar.py	/^possibilidades = obter_possibilidades()$/;"	v
+possibilidades_atualizada	jogar.py	/^possibilidades_atualizada = remover_resultado_concursos(possibilidades, resultado_concursos)$/;"	v
+predicao_alvo	jogar.py	/^    predicao_alvo = modelo.predict(y_alvo)$/;"	v
+predicao_alvo	jogar.py	/^predicao_alvo = 0.00$/;"	v
+predict_proba	jogar.py	/^    predict_proba = modelo.predict(y_alvo)$/;"	v
+prob_alvo	jogar.py	/^prob_alvo = 100.0$/;"	v
+probabilidade	jogar.py	/^        probabilidade = 0.0$/;"	v
+probabilidade	jogar.py	/^    probabilidade = round((predict_proba[0][0] * 100), 1)$/;"	v
+probabilidade	jogar.py	/^probabilidade = 0.00$/;"	v
+procurando	jogar.py	/^procurando = 0$/;"	v
+qtd_fibo	jogar.py	/^qtd_fibo = int(input("Quantidade de fibonacci:\\n->"))$/;"	v
+qtd_impar	jogar.py	/^qtd_impar = int(input("Quantidade de impares:\\n->"))$/;"	v
+qtd_jogos	jogar.py	/^qtd_jogos = int(input("Quantidade de jogos a gerar:\\n->"))$/;"	v
+qtd_primo	jogar.py	/^qtd_primo = int(input("Quantidade de primos:\\n->"))$/;"	v
+resultado_concursos	jogar.py	/^resultado_concursos = resultados_ordenados(dados)$/;"	v
+sequencia	jogar.py	/^    sequencia = [str(numero[0]).zfill(2) for numero in sorteados]$/;"	v
+sorteados	jogar.py	/^    sorteados = sortear_numeros(peso, numero_pesos)$/;"	v
+sorteados	jogar.py	/^sorteados = list()$/;"	v
+validaGame	jogar.py	/^def validaGame(jogo):$/;"	f
+y_alvo	jogar.py	/^    y_alvo = DataFrame(sorteados)$/;"	v
+y_alvo	jogar.py	/^    y_alvo = y_alvo.iloc[:, 0].values$/;"	v
+y_alvo	jogar.py	/^    y_alvo = y_alvo.reshape(1, 15)$/;"	v
