@@ -44,7 +44,6 @@ def criar_combinacoes_csv(dr=DIR, cb=CABECALHO, dz=DEZENAS, tm=TM):
 				indice += 1
 
 
-
 def criar_combinacoes(dz=DEZENAS, tm=TM):
 	"""
 	Cria uma lista com todos as combinações possíveis da Lotofácil de acordo
