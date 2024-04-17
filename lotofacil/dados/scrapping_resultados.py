@@ -33,7 +33,7 @@ colunas = {'Bola1': 'B1', 'Bola2': 'B2', 'Bola3': 'B3', 'Bola4': 'B4', 'Bola5': 
 base.rename(columns=colunas, inplace=True)
 
 # Exporta os dados em arquivo CSV
-base.to_csv('./base/resultados.csv', sep=';', encoding='utf8', index=False)
+base.to_csv('../base/resultados.csv', sep=';', encoding='utf8', index=False)
 
 
 if __name__ == '__main__':
