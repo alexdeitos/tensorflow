@@ -1,55 +1,34 @@
-from zipfile import ZipFile, is_zipfile
-from requests import get
-from io import BytesIO
-from pandas import read_html
+import pandas as pd
+import ssl
 
+def xls_resultados(url):
+    """
+    Obtém os dados de todos os sorteios da lotofácil.
+    
+    :param url: Endereço para obter o arquivo XLS
+    com os dados dos sorteios da lotofácil
+    
+    :returns: DataFrame com os dados do arquivo XLS
 
-URL = 'http://loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOLNDH0MPAzcDbz8vTxNDRy9_Y2NQ13CDA0sTIEKIoEKnN0dPUzMfQwMDEwsjAw8XZw8XMwtfQ0MPM2I02-AAzgaENIfrh-FqsQ9wBmoxN_FydLAGAgNTKEK8DkRrACPGwpyQyMMMj0VAcySpRM!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/pw/Z7_HGK818G0K85260Q5OIRSC42046/res/id=historicoHTML/c=cacheLevelPage/=/'
+    """
+    ssl._create_default_https_context = ssl._create_unverified_context
+    dados = pd.read_excel(url)
+    return dados
 
+# URL do arquivo XLS
+URL = "https://servicebus2.caixa.gov.br/portaldeloterias/api/resultados/download?modalidade=Lotof%C3%A1cil"
 
-def html_resultados(url):
-	"""
-	Obtém os dados de todos os sorteios da lotofácil.
-	
-	:param url: Endereço para obter o arquivo ZIP
-	com os dados dos sorteios da lotofácil
-	
-	:returns: Conteúdo HTML do arquivo ZIP
-
-	"""
-	resposta = get(url, stream = True)
-	verifica_zip = is_zipfile(BytesIO(resposta.content))
-
-	if verifica_zip:
-		arquivo = ZipFile(BytesIO(resposta.content))
-		
-		with arquivo as zip:
-			dados = zip.read('d_lotfac.htm')
-		zip.close
-
-		return dados
-
-
-#html = html_resultados(URL)
-html = get(URL).content
-
-# Cria uma lista a partir da variável (html)
-dados = read_html(html)
-
-print(dados)
-exit()
-
-# Obtém os dados de todos os sorteios
-base = dados[0].iloc[:, [*[i for i in range(17)], 18]]
+# Obtém os dados do arquivo XLS
+base = xls_resultados(URL)
 
 # Remove dados duplicados
 base = base.drop_duplicates('Concurso')
 
 # Renomeia as colunas do DataFrame
 colunas = {'Bola1': 'B1', 'Bola2': 'B2', 'Bola3': 'B3', 'Bola4': 'B4', 'Bola5': 'B5',
-		   'Bola6': 'B6', 'Bola7': 'B7', 'Bola8': 'B8', 'Bola9': 'B9', 'Bola10': 'B10',
-		   'Bola11': 'B11', 'Bola12': 'B12', 'Bola13': 'B13', 'Bola14': 'B14', 'Bola15': 'B15',
-		   'Ganhadores_15_Números': 'Ganhou'}
+           'Bola6': 'B6', 'Bola7': 'B7', 'Bola8': 'B8', 'Bola9': 'B9', 'Bola10': 'B10',
+           'Bola11': 'B11', 'Bola12': 'B12', 'Bola13': 'B13', 'Bola14': 'B14', 'Bola15': 'B15',
+           'Ganhadores_15_Números': 'Ganhou'}
 
 base.rename(columns=colunas, inplace=True)
 
